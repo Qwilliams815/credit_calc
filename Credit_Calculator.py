@@ -73,7 +73,6 @@ def credit_calc(args):
                         print('It takes ' + str(count_of_years) + ' years to repay the credit!\n\nOverpayment = ' + str(
                             int(math.ceil(overpayment))))
                     else:
-                        # MIGHT MESS EVERYTHING UP
                         overpayment = math.ceil(args.payment) * count_of_periods - args.principal
                         print('It takes ' + str(count_of_years) + ' years and '
                               + str(months_remaining) + ' months to repay the credit!\n\nOverpayment = '
